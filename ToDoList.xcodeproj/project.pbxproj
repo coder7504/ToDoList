@@ -12,6 +12,12 @@
 		CE25715F292A5E08008278A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE25715D292A5E08008278A7 /* LaunchScreen.storyboard */; };
 		CE257168292A5E59008278A7 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE257166292A5E59008278A7 /* HomeVC.swift */; };
 		CE257169292A5E59008278A7 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE257167292A5E59008278A7 /* HomeVC.xib */; };
+		CE25716E292A647C008278A7 /* TaskTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE25716C292A647C008278A7 /* TaskTVC.swift */; };
+		CE25716F292A647C008278A7 /* TaskTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE25716D292A647C008278A7 /* TaskTVC.xib */; };
+		CE257172292A6560008278A7 /* TaskDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE257171292A6560008278A7 /* TaskDM.swift */; };
+		CE257174292A65D8008278A7 /* PriorityEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE257173292A65D8008278A7 /* PriorityEnum.swift */; };
+		CE257176292A662B008278A7 /* TaskGroupDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE257175292A662B008278A7 /* TaskGroupDM.swift */; };
+		CE257178292A6663008278A7 /* GroupTypeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE257177292A6663008278A7 /* GroupTypeEnum.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		CE257160292A5E08008278A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE257166292A5E59008278A7 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		CE257167292A5E59008278A7 /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
+		CE25716C292A647C008278A7 /* TaskTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTVC.swift; sourceTree = "<group>"; };
+		CE25716D292A647C008278A7 /* TaskTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskTVC.xib; sourceTree = "<group>"; };
+		CE257171292A6560008278A7 /* TaskDM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDM.swift; sourceTree = "<group>"; };
+		CE257173292A65D8008278A7 /* PriorityEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriorityEnum.swift; sourceTree = "<group>"; };
+		CE257175292A662B008278A7 /* TaskGroupDM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskGroupDM.swift; sourceTree = "<group>"; };
+		CE257177292A6663008278A7 /* GroupTypeEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupTypeEnum.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +67,43 @@
 			isa = PBXGroup;
 			children = (
 				CE257152292A5E06008278A7 /* AppDelegate.swift */,
-				CE257166292A5E59008278A7 /* HomeVC.swift */,
-				CE257167292A5E59008278A7 /* HomeVC.xib */,
+				CE257170292A6546008278A7 /* Models */,
+				CE25716B292A6453008278A7 /* TVCs */,
+				CE25716A292A644D008278A7 /* VCs */,
 				CE25715D292A5E08008278A7 /* LaunchScreen.storyboard */,
 				CE25715B292A5E08008278A7 /* Assets.xcassets */,
 				CE257160292A5E08008278A7 /* Info.plist */,
 			);
 			path = ToDoList;
+			sourceTree = "<group>";
+		};
+		CE25716A292A644D008278A7 /* VCs */ = {
+			isa = PBXGroup;
+			children = (
+				CE257166292A5E59008278A7 /* HomeVC.swift */,
+				CE257167292A5E59008278A7 /* HomeVC.xib */,
+			);
+			path = VCs;
+			sourceTree = "<group>";
+		};
+		CE25716B292A6453008278A7 /* TVCs */ = {
+			isa = PBXGroup;
+			children = (
+				CE25716C292A647C008278A7 /* TaskTVC.swift */,
+				CE25716D292A647C008278A7 /* TaskTVC.xib */,
+			);
+			path = TVCs;
+			sourceTree = "<group>";
+		};
+		CE257170292A6546008278A7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CE257171292A6560008278A7 /* TaskDM.swift */,
+				CE257173292A65D8008278A7 /* PriorityEnum.swift */,
+				CE257175292A662B008278A7 /* TaskGroupDM.swift */,
+				CE257177292A6663008278A7 /* GroupTypeEnum.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,6 +164,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE25716F292A647C008278A7 /* TaskTVC.xib in Resources */,
 				CE25715F292A5E08008278A7 /* LaunchScreen.storyboard in Resources */,
 				CE257169292A5E59008278A7 /* HomeVC.xib in Resources */,
 				CE25715C292A5E08008278A7 /* Assets.xcassets in Resources */,
@@ -135,8 +178,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE25716E292A647C008278A7 /* TaskTVC.swift in Sources */,
 				CE257153292A5E06008278A7 /* AppDelegate.swift in Sources */,
+				CE257176292A662B008278A7 /* TaskGroupDM.swift in Sources */,
+				CE257174292A65D8008278A7 /* PriorityEnum.swift in Sources */,
 				CE257168292A5E59008278A7 /* HomeVC.swift in Sources */,
+				CE257172292A6560008278A7 /* TaskDM.swift in Sources */,
+				CE257178292A6663008278A7 /* GroupTypeEnum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,7 +253,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -260,7 +308,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
