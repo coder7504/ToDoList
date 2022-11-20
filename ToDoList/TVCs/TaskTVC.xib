@@ -19,13 +19,13 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QSU-Lx-zFv">
-                        <rect key="frame" x="20" y="5" width="324" height="122"/>
+                        <rect key="frame" x="20" y="8" width="324" height="116"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="68" translatesAutoresizingMaskIntoConstraints="NO" id="GHg-Lp-uRt">
-                                <rect key="frame" x="20" y="8" width="284" height="106"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="GHg-Lp-uRt">
+                                <rect key="frame" x="20" y="8" width="284" height="100"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="kCV-Zw-Phu">
-                                        <rect key="frame" x="0.0" y="31.5" width="42.5" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="28.5" width="42.5" height="43.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Hl-F9-6F0">
                                                 <rect key="frame" x="0.0" y="0.0" width="42.5" height="20.5"/>
@@ -42,7 +42,7 @@
                                         </subviews>
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wbd-od-Pd1">
-                                        <rect key="frame" x="254" y="38" width="30" height="30"/>
+                                        <rect key="frame" x="254" y="35" width="30" height="30"/>
                                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="S29-RF-nM8"/>
@@ -64,12 +64,17 @@
                             <constraint firstItem="GHg-Lp-uRt" firstAttribute="leading" secondItem="QSU-Lx-zFv" secondAttribute="leading" constant="20" id="MA5-RU-YsS"/>
                             <constraint firstAttribute="trailing" secondItem="GHg-Lp-uRt" secondAttribute="trailing" constant="20" id="xQd-4E-x1D"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <integer key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="QSU-Lx-zFv" secondAttribute="bottom" constant="5" id="8oC-M9-G0A"/>
-                    <constraint firstItem="QSU-Lx-zFv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="P2Y-kS-5Tz"/>
+                    <constraint firstAttribute="bottom" secondItem="QSU-Lx-zFv" secondAttribute="bottom" constant="8" id="8oC-M9-G0A"/>
+                    <constraint firstItem="QSU-Lx-zFv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="P2Y-kS-5Tz"/>
                     <constraint firstAttribute="trailing" secondItem="QSU-Lx-zFv" secondAttribute="trailing" constant="20" id="TzW-3d-mgt"/>
                     <constraint firstItem="QSU-Lx-zFv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="XdB-zm-yT0"/>
                 </constraints>

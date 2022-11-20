@@ -22,24 +22,14 @@ class TaskTVC: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+        selectionStyle = .none
     }
     
     func updateCell(task: TaskDM, groupType: GroupTypeEnum) {
         
         titleLbl.text = task.title
         subTitleLbl.text = task.subTitle
-        
-        switch task.priority {
-        case .high:
-            priorityV.backgroundColor = .systemRed
-        case .medium:
-            priorityV.backgroundColor = .systemOrange
-        case .low:
-            priorityV.backgroundColor = .systemGreen
-        case .none:
-            priorityV.backgroundColor = .systemGray6
-        }
+        priorityV.backgroundColor = task.priority.setPriorityColor()
         
         switch groupType {
         case .new:
@@ -48,6 +38,12 @@ class TaskTVC: UITableViewCell {
             typeView.backgroundColor = .systemGray4
         case .finished:
             typeView.backgroundColor = .systemGray2
+        case .unarchived:
+            print("unarchived")
+        case .unFinished:
+            print("unFinished")
+        case .deleted:
+            print("deleted")
         }
         
     }
