@@ -25,7 +25,9 @@ class HomeVC: UIViewController {
     }
 
     @IBAction func addTapped(_ sender: Any) {
-        
+        let vc = NewTaskVC(nibName: "NewTaskVC", bundle: nil)
+        vc.modalPresentationStyle = .overFullScreen
+        self.present(vc, animated: false)
     }
     
 }
