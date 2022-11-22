@@ -23,6 +23,7 @@
 		CE25717F292A7149008278A7 /* PriorityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE25717D292A7149008278A7 /* PriorityVC.swift */; };
 		CE257180292A7149008278A7 /* PriorityVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE25717E292A7149008278A7 /* PriorityVC.xib */; };
 		CE257182292A7767008278A7 /* Ex+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE257181292A7767008278A7 /* Ex+UIViewController.swift */; };
+		CE257185292A87B3008278A7 /* Ex+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE257184292A87B2008278A7 /* Ex+String.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		CE25717D292A7149008278A7 /* PriorityVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriorityVC.swift; sourceTree = "<group>"; };
 		CE25717E292A7149008278A7 /* PriorityVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PriorityVC.xib; sourceTree = "<group>"; };
 		CE257181292A7767008278A7 /* Ex+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ex+UIViewController.swift"; sourceTree = "<group>"; };
+		CE257184292A87B2008278A7 /* Ex+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ex+String.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				CE257181292A7767008278A7 /* Ex+UIViewController.swift */,
+				CE257184292A87B2008278A7 /* Ex+String.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 				CE25716E292A647C008278A7 /* TaskTVC.swift in Sources */,
 				CE257153292A5E06008278A7 /* AppDelegate.swift in Sources */,
 				CE257176292A662B008278A7 /* TaskGroupDM.swift in Sources */,
+				CE257185292A87B3008278A7 /* Ex+String.swift in Sources */,
 				CE257174292A65D8008278A7 /* PriorityEnum.swift in Sources */,
 				CE257182292A7767008278A7 /* Ex+UIViewController.swift in Sources */,
 				CE25717F292A7149008278A7 /* PriorityVC.swift in Sources */,
